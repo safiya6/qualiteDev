@@ -11,7 +11,7 @@ public class VoitureTest {
     public void TestToString(){
         Voiture voiture = new Voiture ("Toyota", 10000);
         assertEquals("Voiture{marque='Toyota', prix=10000}",voiture.toString());
-
+            fhdkjfhksjwdhjishkjfgqsydkuyswukyugqsu
 
     }*/
 
