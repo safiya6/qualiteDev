@@ -1,7 +1,7 @@
-package Safiya.Services;
+package java.Services;
 
 
-import Safiya.Voiture;
+import java.Voiture;
 
 public interface Statistique {
 

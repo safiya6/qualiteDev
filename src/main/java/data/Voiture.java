@@ -1,4 +1,4 @@
-package Safiya;
+package data;
 
 public class Voiture {
     private String marque;
