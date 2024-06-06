@@ -11,7 +11,7 @@ public class ServiceTest {
 
     private Service service ;
 
-    @BeforeEach
+    /*@BeforeEach
     void setup(){
         Voiture voiture = new Voiture ("Toyota", 10000);
         Voiture voiture1 = new Voiture ("seat", 25000);
@@ -22,7 +22,7 @@ public class ServiceTest {
         Voiture voiture6 = new Voiture ("Audi", 75000);
         ArrayList<Voiture> listeVoiture = new ArrayList();
 
-    }
+    }*/
 
 }
 
