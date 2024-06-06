@@ -1,4 +1,4 @@
-package SafiyaTest;
+package java.SafiyaTest;
 
 import data.Voiture ;
 import org.junit.jupiter.api.Test;

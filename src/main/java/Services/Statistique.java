@@ -1,7 +1,7 @@
-package java.Services;
+package Services;
 
 
-import java.Voiture;
+import data.Voiture;
 
 public interface Statistique {
 
