@@ -1,5 +1,6 @@
 package SafiyaTest;
-import Safiya.Voiture ;
+
+import data.Voiture ;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

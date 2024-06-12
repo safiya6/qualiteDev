@@ -1,7 +1,7 @@
-package Safiya.Services;
+package Services;
 
 
-import Safiya.Voiture;
+import data.Voiture;
 
 public interface Statistique {
 

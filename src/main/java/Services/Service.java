@@ -1,6 +1,6 @@
-package Safiya.Services;
+package Services;
 
-import Safiya.Voiture;
+import data.Voiture;
 
 import java.util.ArrayList;
 
@@ -24,6 +24,7 @@ public class Service implements Statistique {
      * 5 pourcent de remise  s'effectue a chaque fois qu'il y a 5 voiture
      * @return le prix des voitures
      * @throws ArithmeticException s'il n'y a pas de voiture
+     * a chaque ajout de 5 nouvelle voiture je mets 5% de remise au total
      */
     @Override
     public int prix() throws ArithmeticException {
@@ -31,22 +32,23 @@ public class Service implements Statistique {
             throw new ArithmeticException("pas de voiture");
 
         }
-        double total = 0.0;
+        int total = 0;
         int i = 0;
         for (Voiture voiture :tabVoiture ){
             total += voiture.getPrix();
             i++;
             if (i==5) {
                 i=0;
-                double remise = total*0.05;
+                int remise = (int) (total*0.05);
                 if(remise> 20000.0){
-                    remise = 20000.0;
+                    remise = (int) 20000.0;
                 }
                 total -= remise;
             }
         }
 
 
-        return 0;
+        return total;
     }
+
 }
