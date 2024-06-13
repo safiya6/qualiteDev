@@ -8,6 +8,10 @@ public class Voiture {
         this.marque = marque;
         this.prix = prix;
     }
+    public Voiture(){
+        this.marque ="";
+        this.prix=0;
+    }
 
     public void setMarque(String marque) {
         this.marque = marque;

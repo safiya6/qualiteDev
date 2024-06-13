@@ -24,6 +24,17 @@ public class ServiceTest {
         ArrayList<Voiture> listeVoiture = new ArrayList();
 
     }
+<<<<<<< Updated upstream:src/test/SafiyaTest/ServiceTest.java
+=======
+    @Test
+    void testPrix() {
+        int Prix = 170050; // calculate the expected price with one discount
+        assertEquals(Prix, service.prix());
+    }
+
+}
+
+>>>>>>> Stashed changes:src/test/java/SafiyaTest/ServiceTest.java
 
 }
 
