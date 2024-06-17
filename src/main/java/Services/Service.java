@@ -26,7 +26,7 @@ public class Service implements Statistique {
      * @throws ArithmeticException s'il n'y a pas de voiture
      * a chaque ajout de 5 nouvelle voiture je mets 5% de remise au total
      */
-    
+
     @Override
     public int prix() throws ArithmeticException {
         if (tabVoiture.isEmpty()){
