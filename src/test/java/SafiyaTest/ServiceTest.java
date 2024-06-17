@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ServiceTest {
 
     private Service service ;
@@ -16,7 +17,7 @@ public class ServiceTest {
     void setup(){
         Voiture voiture11 = new Voiture ("Toyota", 10000);
         Voiture voiture1 = new Voiture ("seat", 25000);
-        Voiture voiture2 = new Voiture ("Renault", 15000);
+        Voiture voiture2 = new Voiture ("Renault", 400000);
         Voiture voiture3 = new Voiture ("Opel", 17000);
         Voiture voiture4 = new Voiture ("Citroen", 12000);
         Voiture voiture5 = new Voiture ("Volkswagen", 20000);
@@ -34,10 +35,27 @@ public class ServiceTest {
     }
     @Test
     void testPrix() {
-        int Prix = 170050; // calculate the expected price with one discount
+        int Prix = 539000; // calculate the expected price with one discount
         assertEquals(Prix, service.prix());
     }
+
+    @Test
+    void testNull() {
+        ArrayList<Voiture> garrage = new ArrayList<>();
+        Service service2 = new Service(garrage);
+
+        boolean exceptionThrown = false;
+        try {
+            service2.prix();
+        } catch (ArithmeticException e) {
+            exceptionThrown = true;
+            assertEquals("pas de voiture", e.getMessage());
+        }
+
+        assertTrue(exceptionThrown, "Expected ArithmeticException to be thrown");
+    }
 }
+
 
 
 
